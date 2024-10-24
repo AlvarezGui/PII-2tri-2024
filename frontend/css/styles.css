@@ -2,6 +2,12 @@
     background-color: #EA8356;
 }
 
+@media only screen and (min-width:768px){
+    .img-painel-1{
+        padding-left: 30%;
+    }
+}
+
 h1{
     font-size: 90px;
 }
