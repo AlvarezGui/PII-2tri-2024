@@ -1,5 +1,5 @@
 # PII-2tri-2024
-O projeto integrador interdiciplinar do segundo semestre de 2024 foi fazer um site para uma organização parceira do Instituto Mauá de técnologia. Nós escolhemos trabalhar com a organização Usina Eco-Cultural, que tem um papel importante em sua comunidade.
+O projeto integrador interdiciplinar do segundo semestre de 2024 foi fazer um site para uma organização parceira do Instituto Mauá de tecnologia. Nós escolhemos trabalhar com a organização Usina Eco-Cultural, que tem um papel importante em sua comunidade.
 
 ## Como Usar
 1. Baixe o código fonte do projeto.
