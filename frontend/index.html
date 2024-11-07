@@ -8,6 +8,37 @@
     <title>Usina Eco-Cultural</title>
 </head>
 <body>
+    <!-- modal entrar -->
+    <div class="modal fade" id="modalEntrar" aria-labelledby="modalEntrar" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Entrar</h1>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                    <div class="alert alert-dismissible fade d-none alert-modal-entrar" role="alert"></div>
+
+                    <div class="mb-3">
+                        <label for="usuarioEntrarInput" class="col-form-label">Usuário</label>
+                        <input type="text" id="usuarioEntrarInput" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="passwordEntrarInput" class="col-form-label">Senha</label>
+                        <input type="password" id="passwordEntrarInput" class="form-control">
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" onclick="entrarUsuario()" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim modal entrar -->
+
     <!-- header -->
     <nav class="navbar navbar-expand-lg border-bottom nav-bar sticky-top">
         <div class="container-fluid d-flex">
@@ -45,6 +76,9 @@
                     <li class="nav-item p-2">
                          <a href="#"><button type="button" class="btn btn-dark">Como Apoiar</button></a>
                     </li>
+                    <li class="nav-item p-2">
+                        <a href="#"><button type="button" class="btn btn-outline-dark" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalEntrar">Entrar</button></a>
+                   </li>
                 </ul>
             </div>
         </div>
@@ -61,10 +95,10 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/IMG_1555.jpg" class="d-block w-100 img-carro"  alt="...">
+                    <img src="./images/IMG_1555.jpg" class="d-block w-100 img-carro"  alt="Imagem do local">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/IMG_1768.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/IMG_1768.jpg" class="d-block w-100 img-carro" alt="Imagem de pessoas que trabalham no coletivo">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
@@ -75,15 +109,36 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-          </div>
-          <!-- fim carousul -->
+        </div>
+        <!-- fim carousul -->
+
+        <!-- o coletivo -->
+         <div class="container-fluid painel-o-coletivo">
+            <div class="row">
+                <div class="col">
+                    <h1>O Coletivo</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <p>O Coletivo Usina Eco-Cultural surgiu do descontentamento de moradores próximos à região do Ipiranga e do antigo Incinerador Vergueiro, que foi deixado ao abandono por mais de 20 anos. Arquitetos, urbanistas, ativistas, artistas e ambientalistas e pessoas de diversas profissões decidiram, desde 2019, se unir e discutir propostas de transformação e melhorias não apenas para o Incinerador, mas para a região como um todo. O coletivo é plural, multipartidário e horizontal.</p>
+                    <p>A proposta do movimento é readequar o espaço do que foi o Incinerador Vergueiro, transformando-o em um centro de cultura e estudos sobre o meio ambiente, mantendo viva a memória do que foi aquele espaço e proporcionando um local para reflexão sobre a cidade justa e democrática que desejamos no futuro.</p>
+                    <p>O objetivo principal é proporcionar à comunidade local um espaço revitalizado, representando não apenas um marco cultural, mas também um gesto de reparação histórica após décadas de abandono. A Usina Eco-Cultural surge como um ponto de encontro e convivência para a comunidade, contribuindo para fortalecer os laços sociais de quem vive na região.</p>
+                    <br>
+                </div>
+            </div>
+         </div>
+         <!-- fim o coletivo -->
 
 
 
-          <p>lorem2000</p>
+          
      </main>
      <!-- fim do main -->
 
+     <script src="./js/script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
