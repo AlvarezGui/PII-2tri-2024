@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "start": "nodemon backend.js"
+    "start": "nodemon index.js"
   },
   "author": "guilherme alvarez",
   "license": "ISC",
