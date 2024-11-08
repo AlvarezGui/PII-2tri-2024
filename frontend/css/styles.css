@@ -21,24 +21,42 @@ p{
     background-color: #D9D9D9;
 }
 
-.texto-o-coletivo{
-    position: relative;
-    z-index: 2
+
+
+@media only screen and (min-width:1920px) and (min-height: 900px){
+    .circle {
+        position: absolute;
+        top: 136.5%;
+        /* top: 138vh; */
+        left: 10%;     
+        transform: translate(-50%, -50%);
+        /* width: 750px;   */
+        width: 40vw;
+        /* height: 497px;  */
+        height: 50vh;
+        background-color: white; 
+        border-radius: 50%;
+        padding-top: 10%;
+        z-index: 1; 
+    }
+    .imagem-painel-o-coletivo{
+        position: relative;
+        z-index: 2;
+    }
+    .texto-o-coletivo{
+        position: relative;
+        z-index: 2
+    }
 }
 
-.circle {
-    position: absolute;
-    top: 136.5%;
-    left: 10%;     
-    transform: translate(-50%, -50%);
-    width: 750px;  
-    height: 497px; 
-    background-color: white; 
-    border-radius: 50%;
-    z-index: 1; 
-  }
+@media only screen and (max-width:1919px) and (min-width:1400px){
+    /* .div-imagem-painel{
+        padding-left: 100%;
+    } */
+    
+    .imagem-painel-o-coletivo{
+        padding-right: 15%;
+    }
+}
 
-  .imagem-painel-o-coletivo{
-    position: relative;
-    z-index: 2;
-  }
+
