@@ -17,6 +17,15 @@ const usuarioSchema = mongoose.Schema({
 usuarioSchema.plugin(uniqueValidator);
 const Usuario = mongoose.model("Usuario", usuarioSchema);
 
+// modelo post
+const postSchema = mongoose.Schema({
+    titulo: {type: String, required: true},
+    texto: {type: String, required: true},
+    // imagem: {data: Buffer, contentType: String, required: true}
+});
+postSchema.plugin(uniqueValidator);
+const Post = mongoose.model("Post", postSchema);
+
 // conectar no banco de dados
 async function conectarAoMongo() {
     await mongoose.connect(`mongodb+srv://adm:adm@cluster0.zal5l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`);
@@ -65,6 +74,25 @@ app.post('/login', async (req, res) => {
     );
     res.status(200).json({ token: token });
 });
+
+// postar
+app.post('/postar', async (req, res) => {
+    try{
+        const titulo = req.body.titulo;
+        const texto = req.body.texto;
+
+        const post = new Post({titulo: titulo, texto: texto});
+        const respMongo = await post.save();
+        console.log(respMongo);
+        res.status(200).end();
+    }
+    catch(err){
+        console.log(err);
+        res.status(409).end();
+    }
+});
+
+// TODO exibir post
 
 app.listen(3000, () => {
     try {
