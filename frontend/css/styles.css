@@ -42,18 +42,15 @@ p{
     .imagem-painel-o-coletivo{
         position: relative;
         z-index: 2;
+        right: 13%;
     }
     .texto-o-coletivo{
         position: relative;
-        z-index: 2
+        z-index: 2;
     }
 }
 
 @media only screen and (max-width:1919px) and (min-width:1400px){
-    /* .div-imagem-painel{
-        padding-left: 100%;
-    } */
-    
     .imagem-painel-o-coletivo{
         padding-right: 15%;
     }
