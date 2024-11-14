@@ -12,7 +12,7 @@ O projeto integrador interdiciplinar do segundo semestre de 2024 foi fazer um si
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap (5.3.3)
+- Bootstrap (v5.3.3)
 - Node.js (v20.9.0)
 - npm (v10.9.0)
 
