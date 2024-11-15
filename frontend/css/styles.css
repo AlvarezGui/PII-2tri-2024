@@ -86,7 +86,7 @@ li.borderless {
 
 @media only screen and (max-width:1919px) and (min-width:1400px){
     .imagem-painel-o-coletivo{
-        padding-right: 15%;
+        padding-right: 0%;
     }
 }
 
