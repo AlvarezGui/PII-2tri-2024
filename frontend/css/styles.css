@@ -104,3 +104,12 @@ li.borderless {
     /* border-bottom: 100px; */
     /* border-bottom: black; */
 }
+
+.seta {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.img-como-chegar {
+    padding-left: 100px;
+}
