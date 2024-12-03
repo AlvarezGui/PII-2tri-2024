@@ -97,6 +97,8 @@ li.borderless {
 
 .img-round{
     border-radius: 15px 50px;
+    width: 100%;
+    height: auto;
 }
 
 .form-control {
@@ -111,5 +113,12 @@ li.borderless {
 }
 
 .img-como-chegar {
-    padding-left: 100px;
+    height: 435,6px;
+    width: 580,8px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.link-maps{
+    color: #69A625;
 }
