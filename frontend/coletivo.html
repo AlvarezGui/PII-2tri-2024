@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>O Coletivo - Usina Eco-Cultural</title>
+</head>
+<body>
+    <!-- modal entrar -->
+    <div class="modal fade container-fluid" id="modalEntrar" aria-labelledby="modalEntrar" aria-hidden="true">
+        <div class="modal-dialog col">
+            <div class="modal-content row">
+                <!-- header -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Entrar</h1>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                    <div class="alert alert-dismissible fade d-none alert-modal-entrar" role="alert"></div>
+
+                    <div class="mb-3">
+                        <label for="usuarioEntrarInput" class="col-form-label">Usuário</label>
+                        <input type="text" id="usuarioEntrarInput" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="passwordEntrarInput" class="col-form-label">Senha</label>
+                        <input type="password" id="passwordEntrarInput" class="form-control">
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" onclick="entrarUsuario()" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim modal entrar -->
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg border-bottom nav-bar sticky-top">
+        <div class="container-fluid d-flex">
+            <a href="index.html" class="navbar-brand flex-grow-1 p-2 ">
+                <img class="navbar-brand" src="./images/preto arvore verde transparente.png" alt="Logo" width="64" height="70">
+                <!-- Usina Eco-Cultural -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li  class="nav-item p-2 px-2">
+                        <a href="coletivo.html" class="nav-link active">O Coletivo</a>
+                    </li>
+                    <li  class="nav-item p-2 px-3">
+                        <a href="index.html#linhadotempo" class="nav-link active">História</a>
+                    </li>
+                    <li  class="nav-item p-2 px-3">
+                        <a href="loja.html" class="nav-link active">Loja</a>
+                    </li>
+                    <li class="nav-item p-2 px-3">
+                        <a href="agenda.html" class="nav-link active">Agenda</a>
+                    </li>                    
+                    <li  class="nav-item p-2 px-3">
+                        <a href="usinanamidia.html" class="nav-link active">Usina Na Mídia</a>
+                    </li>
+                    <li  class="nav-item p-2 px-3">
+                        <a href="faleconosco.html" class="nav-link active">Fale Conosco</a>
+                    </li>
+                    <li class="nav-item p-2 px-3">
+                        <a href="apoiar.html"><button type="button" class="btn btn-dark">Como Apoiar</button></a>
+                    </li>
+                    <li class="nav-item p-2 px-3">
+                        <a href="#"><button type="button" class="btn btn-outline-dark" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalEntrar">Entrar</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fim da header -->
+
+    <!-- main -->
+    <main>
+        <h1 class="p-5">O Coletivo</h1>
+
+        <div class="container bg-white rounded-4 py-2">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>O Coletivo Usina Eco-Cultural surgiu do descontentamento de moradores próximos à região do Ipiranga e do antigo Incinerador Vergueiro, que foi deixado ao abandono por mais de 20 anos. Arquitetos, urbanistas, ativistas, artistas e ambientalistas e pessoas de diversas profissões decidiram, desde 2019, se unir e discutir propostas de transformação e melhorias não apenas para o Incinerador, mas para a região como um todo. O coletivo é plural, multipartidário e horizontal.<p>
+                    <p>A proposta do movimento é readequar o espaço do que foi o Incinerador Vergueiro, transformando-o em um centro de cultura e estudos sobre o meio ambiente, mantendo viva a memória do que foi aquele espaço e proporcionando um local para reflexão sobre a cidade justa e democrática que desejamos no futuro.</p>
+                </div>
+                <div col-lg-6>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>O objetivo principal é proporcionar à comunidade local um espaço revitalizado, representando não apenas um marco cultural, mas também um gesto de reparação histórica após décadas de abandono. A Usina Eco-Cultural surge como um ponto de encontro e convivência para a comunidade, contribuindo para fortalecer os laços sociais de quem vive na região.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Quem Somos:</b> O Coletivo Usina Eco-Cultural é uma organização sem fins lucrativos, criada para proteger, revitalizar e reinventar o uso do antigo Incinerador Vergueiro em São Paulo.</p>
+                    <p>Fundada no dia 30 de março de 2023, Dia Internacional das Nações Unidas do Resíduo Zero, a nossa associação é composta por moradores, artistas, ambientalistas e membros ativos da sociedade civil. Estamos comprometidos com a promoção da cultura, educação ambiental, arte e paz, sem distinção por política, crença, raça, gênero ou qualquer outra característica.</p>
+                    <p>Nossa Missão: Nosso objetivo é transformar o antigo Incinerador Vergueiro em um espaço cultural e educativo que serve a comunidade local e visitantes. Queremos que este lugar seja um símbolo de como a cultura e o respeito ao meio ambiente podem andar de mãos dadas. Promovemos a conscientização socioambiental e o empoderamento da comunidade para criar uma sociedade mais justa e sustentável.</p>
+                    <p><b>Nossos Valores:</b></p>
+                    <ul>
+                        <li><b>Sustentabilidade:</b> Promover práticas que respeitem e preservem o meio ambiente.</li>
+                        <li><b>Inclusão:</b> Garantir um espaço acolhedor e acessível a todos, valorizando a diversidade.</li>
+                        <li><b>Educação e Cultura:</b> Usar o poder da educação e da cultura para transformar a comunidade.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Conheça Nossos Objetivos Principais</b></p>
+                    <p><b>Proteção e Recuperação do Espaço:</b> Nosso principal objetivo é zelar pelo antigo Incinerador Vergueiro, um marco histórico em nossa comunidade. Queremos proteger este local de atividades que possam prejudicar o ambiente ou a saúde das pessoas, como a incineração de resíduos. Nosso compromisso é com a recuperação e reutilização desse espaço de maneira responsável e sustentável.</p>
+                    <p><b>Transformação Cultural e Educativa:</b> Almejamos transformar o Incinerador Vergueiro em um centro de cultura e educação ambiental. Planejamos instalar um museu dedicado ao ensino e à prática da sustentabilidade, além de promover eventos culturais, esportivos e de lazer que envolvam e beneficiem toda a comunidade.</p>
+                    <p><b>Promoção da Educação Socioambiental:</b> É essencial para nós disseminar a consciência socioambiental. Por meio de oficinas, palestras e cursos, queremos empoderar os indivíduos a agir de forma mais consciente e respeitosa em relação ao meio ambiente e à diversidade cultural e social.</p>
+                    <p><b>Defesa do Meio Ambiente e Direito à Cidade:</b> Lutamos por um ambiente urbano que respeite tanto o patrimônio histórico quanto o ecológico. Nosso trabalho visa promover o direito à cidade, onde todos possam usufruir de espaços públicos verdes, saudáveis e acessíveis.</p>
+                    <p><b>Estímulo à Participação Comunitária:</b> Encorajamos todos os membros da comunidade a participar ativamente das decisões e das transformações que ocorrem em nosso espaço. Acreditamos que um envolvimento direto é crucial para construir uma comunidade mais unida e resiliente.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>O que fazemos? Conheça as principais Atividades e Programas do Coletivo Usina Eco-Cultural</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <p><b>Atividades Culturais e de Lazer:</b> Organizamos uma variedade de eventos que enriquecem nossa comunidade, como apresentações de música, teatro, exposições de arte e festivais culturais. Estes eventos são oportunidades para celebrar nossa diversidade e talentos locais, além de promover um sentido de comunidade e pertencimento</p>
+                    <p><b>Programas de Educação Ambiental:</b> No coração do antigo Incinerador Vergueiro, planejamos estabelecer um museu dedicado à educação ambiental. Este espaço servirá para educar crianças e adultos sobre práticas sustentáveis, conservação ambiental e o impacto de nossas ações no planeta. Através de workshops, seminários e atividades práticas, buscamos criar uma comunidade mais informada e consciente.</p>
+                    <p><b>Iniciativas de Revitalização Urbana:</b> Comprometidos com o melhoramento do nosso bairro, estamos envolvidos em projetos de revitalização urbana que incluem a criação de áreas verdes, jardins de chuva e espaços de lazer que todos possam desfrutar. Estas áreas não só melhoram a qualidade de vida urbana, mas também ajudam a manter nosso ambiente local mais saudável e sustentável.</p>
+                    <p><b>Apoio à Diversidade e Inclusão:</b> Fazemos um esforço consciente para garantir que nossas atividades e programas sejam acessíveis e inclusivos. Isso inclui dar voz a todas as minorias e grupos sub representados, garantindo que eles sejam ouvidos e possam participar plenamente em todos os aspectos da vida comunitária.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Voluntariado e Engajamento Comunitário:</b> Encorajamos os membros da comunidade a se envolverem ativamente como voluntários nos nossos programas e eventos. O voluntariado é uma forma poderosa de contribuir para o bem comum, aprender novas habilidades e fazer conexões significativas dentro da comunidade.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p><b>Descontaminação do espaço</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p><b>Estudos sobre a condição do terreno e entornos:</b> Recentemente, a prefeitura foi multada por adiar a entrega dos relatórios sobre a contaminação do espaço. A CETESB aplicou uma multa em relação à ausência de resposta da prefeitura sobre uma solicitação de informações sobre contaminações feita pela Usina pouco antes de darmos início oficialmente ao movimento. Sendo assim, a prefeitura não tem laudos sobre a contaminação do terreno e regiões afetadas pela queima de lixo. Por isso, é prioridade do coletivo a realização desses estudos para garantir a segurança de todos os moradores e frequentadores da Usina.</p>
+                    <p>Atualmente, a prefeitura não possui laudos sobre a contaminação do terreno e das áreas afetadas pela queima de lixo. Precisamos desses estudos para garantir a segurança de todos os moradores e frequentadores do Ipiranga. As informações que temos indicam que o abandono é o principal fator de contaminação, com a presença de pombos, entre outros. O local tem atraído moradores de rua e usuários de drogas, gerando uma sensação de insegurança para a população. O espaço não pode permanecer como está!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Polo Cultural do Ipiranga</b></p>
+                    <p>No primeiro ano de nossa atuação, percebemos uma carência de cultura e ações voltadas para a educação ambiental na região. Isso fortalece ainda mais nosso coletivo e está alinhado com nossos objetivos. Precisamos de um espaço onde possamos debater e discutir a cidade que queremos, afinal, temos direito à cidade. Desde o início do movimento, já realizamos diversas ações de cultura.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Melhorias para a região</b></p>
+                    <p>O espaço abandonado há mais de 20 anos gera uma sensação de insegurança em seu entorno. A readequação do espaço traz mais segurança para a área e valorização para toda a região. Antes de ocuparmos o espaço, usuários de drogas estavam frequentando o local.</p>
+                    <p>Não podemos permitir que o terreno seja usado para construir mais um prédio residencial no bairro; a área é de extrema relevância e deve ser usada em prol dos cidadãos. A região necessita de espaços de cultura e de discussão da cidade que queremos.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Museu do Meio Ambiente</b></p>
+                    <p>Na Usina, a educação ambiental é protagonista. A ideia é que a área da Usina seja um local para o ensino de educação ambiental e experiências práticas, como o plantio de espécies nativas, hortas suspensas (sem conexão com o solo, devido à condição desconhecida do solo) e atividades de compostagem, ensinando a população a descartar corretamente o lixo orgânico.</p>
+                    <p>A proposta do Museu do Meio Ambiente é um sonho coletivo de todos aqueles que acreditam que o local deve ser ressignificado, devolvendo à população um espaço semelhante ao que foi feito no Incinerador de Pinheiros, próximo à praça Victor Civita. O Museu do Meio Ambiente faz parte de um Projeto de Lei que está na Câmara Municipal de São Paulo, que tem o objetivo de criar um Parque Linear que ligaria o Parque das Águas, no Jardim Botânico, ao Parque da Independência, no Museu do Ipiranga. Esse parque passaria pela Avenida Ricardo Jafet, acompanhando o famoso riacho do Ipiranga, tão presente na história do nosso país e também no nosso hino.</p>
+                    <p>O museu fará parte do Corredor Verde, projeto que busca fazer um parque linear que passa ao lado do terreno da Usina, na Av. Ricardo Jafet.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Programa Ruas Abertas </b></p>
+                    <p>Política pública que fecha a rua aos domingos e permite que a população use para brincadeiras, a ideia é que a Rua Breno Ferraz do Amaral em frente a Usina seja uma via dentro do programa Ruas Abertas.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>História</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Do Incinerador Vergueiro</b></p>
+                    <p>O Incinerador Vergueiro, localizado no Ipiranga, zona sul de São Paulo, foi um dos três incineradores da cidade. Iniciou suas atividades em 1968, a princípio para lixo doméstico, posteriormente incluindo lixo hospitalar a partir de 1977. Ativo até 2002, o Incinerador Vergueiro desempenhou um papel significativo na história da coleta de lixo em São Paulo, chegando a incinerar cerca de 50 toneladas diárias.</p>
+                    <p>O bairro do Ipiranga, predominantemente industrial, testemunhou o crescimento do descontentamento com o Incinerador, cujas fumaças atingiam um raio de 10km, afetando até cidades vizinhas. A população protestou intensamente na década de 90 e início dos anos 2000, destacando a inadequação ambiental do Incinerador. Em 2000, um protesto bloqueou a entrada de caminhões, levando o poder público a avaliar o incinerador.</p>
+                    <p>O laudo de dezembro de 2000 revelou a presença de coliformes fecais, bacteriófagos e substâncias tóxicas nas cinzas, invalidando sua eficácia na esterilização do lixo. Detectou-se também a liberação de substâncias cancerígenas nas fumaças. Pressionada, a prefeitura assinou um Termo de Ajustamento de Conduta Ambiental, reduzindo a média diária de lixo para 6 toneladas. Em dezembro de 2001, ocorreu a última queima.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p><b>Do abandono à ocupação</b></p>
+                    <p>O Incinerador encerrou oficialmente em 2002, marcado por uma celebração com balões coloridos. Houve 461 reclamações formais, 19 multas ambientais não pagas, e o local permanece considerado tóxico já que o poder público não fez nada para “desintoxicar”. As tentativas de transformá-lo em um polo cultural e ambiental foram frustradas, deixando o prédio interditado, com vidros quebrados e pichações. A chaminé continua como símbolo da luta da comunidade. Ao lado, o Transbordo Vergueiro recebe cerca de 3000 toneladas de lixo diariamente.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Localizado na região centro-sul de São Paulo, mais precisamente no bairro do Ipiranga, em frente à estação de metrô Santos-Imigrantes da Linha Verde do Metrô, o Coletivo Usina Eco-cultural decidiu ocupar o espaço que ficou abandonado durante 20 anos, depois que um grupo de moradores conseguiu paralisar imediatamente as atividades do Incinerador em 2001.</p>
+                </div>
+            </div>
+            <div class="row mt-3"></div>
+        </div>
+        <div class="row mt-5"></div>
+    </main>
+    <!-- fim main -->
+
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row py-3 text-center px-4">
+                    <div class="d-flex align-items-center px-3">
+                        <a href="#" class="footera">
+                            <div class="px-1">
+                                <i class="bi bi-person h3"></i>
+                                <span class="span-icones">Quem somos?</span>
+                            </div>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1kDx72fzrCsVuIQG3DY9QdLEcpThjbB56/view" target="_blank" class="footera">
+                            <div class="px-3">
+                                <i class="bi bi-book h2"></i>
+                                <span class="span-icones">Estatuto da Usina</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center px-3">
+                        <a href="#" class="footera">
+                            <div class="px-1">
+                                <i class="bi bi-chat-dots h2"></i>
+                                <span class="span-icones">Fale conosco</span>
+                            </div>
+                        </a>
+                        <a href="#" class="footera">
+                            <div class="px-4">
+                                <i class="bi bi-geo-alt h2"></i>
+                                <span class="span-icones">Como chegar?</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-4 text-center">
+                <h4>Redes Sociais</h4>
+                <div>
+                    <a class="footera" href="https://www.facebook.com/usinaecocultural/" target="_blank">
+                        <i class="bi bi-facebook h1 px-1"></i>
+                    </a>
+                    <a class="footera" href="https://www.instagram.com/usinaecocultural/" target="_blank">
+                        <i class="bi bi-instagram h1 px-1"></i>
+                    </a>
+                    <a class="footera" href="https://wa.me/numerozap" target="_blank">
+                        <i class="bi bi-whatsapp h1 px-1"></i>
+                    </a>
+                    <a class="footera" href="https://www.youtube.com/channel/UC2t4GZA3OPjAFOL5xMXNwYw" target="_blank">
+                        <i class="bi bi-youtube h1 px-1"></i>
+                    </a>
+                </div>
+                <a href="#" class="footera">Termos e condições</a>
+                <a href="#" class="footera">Política de privacidade</a>
+            </div>
+    
+            <div class="col-sm-4 text-center text-end py-3">
+                <h3>(11) 98585-3114</h3>
+                <h3>usina.eco.cultural@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+    <!-- fim footer -->
+
+    <script src="./js/usuario.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
